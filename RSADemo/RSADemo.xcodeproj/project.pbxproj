@@ -11,6 +11,8 @@
 		99F9FE3F204F92A600E98E25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99F9FE3E204F92A600E98E25 /* Assets.xcassets */; };
 		99F9FE42204F92A700E98E25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99F9FE40204F92A700E98E25 /* LaunchScreen.storyboard */; };
 		99F9FE45204F92A700E98E25 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F9FE44204F92A700E98E25 /* main.m */; };
+		99F9FE4E204F941F00E98E25 /* SpeechToTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F9FE4D204F941F00E98E25 /* SpeechToTextViewController.m */; };
+		99F9FE53204F97D700E98E25 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F9FE52204F97D700E98E25 /* MainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,11 @@
 		99F9FE41204F92A700E98E25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		99F9FE43204F92A700E98E25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		99F9FE44204F92A700E98E25 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		99F9FE4C204F941F00E98E25 /* SpeechToTextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpeechToTextViewController.h; sourceTree = "<group>"; };
+		99F9FE4D204F941F00E98E25 /* SpeechToTextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpeechToTextViewController.m; sourceTree = "<group>"; };
+		99F9FE50204F952A00E98E25 /* Contants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Contants.h; sourceTree = "<group>"; };
+		99F9FE51204F97D700E98E25 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		99F9FE52204F97D700E98E25 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +60,8 @@
 		99F9FE3A204F92A600E98E25 /* RSADemo */ = {
 			isa = PBXGroup;
 			children = (
+				99F9FE4F204F950000E98E25 /* utils */,
+				99F9FE4B204F93CA00E98E25 /* controllers */,
 				99F9FE3B204F92A600E98E25 /* AppDelegate.h */,
 				99F9FE3C204F92A600E98E25 /* AppDelegate.m */,
 				99F9FE3E204F92A600E98E25 /* Assets.xcassets */,
@@ -61,6 +70,25 @@
 				99F9FE44204F92A700E98E25 /* main.m */,
 			);
 			path = RSADemo;
+			sourceTree = "<group>";
+		};
+		99F9FE4B204F93CA00E98E25 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				99F9FE4C204F941F00E98E25 /* SpeechToTextViewController.h */,
+				99F9FE4D204F941F00E98E25 /* SpeechToTextViewController.m */,
+				99F9FE51204F97D700E98E25 /* MainViewController.h */,
+				99F9FE52204F97D700E98E25 /* MainViewController.m */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		99F9FE4F204F950000E98E25 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				99F9FE50204F952A00E98E25 /* Contants.h */,
+			);
+			path = utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,8 +161,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99F9FE4E204F941F00E98E25 /* SpeechToTextViewController.m in Sources */,
 				99F9FE45204F92A700E98E25 /* main.m in Sources */,
 				99F9FE3D204F92A600E98E25 /* AppDelegate.m in Sources */,
+				99F9FE53204F97D700E98E25 /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
